@@ -1,0 +1,21 @@
+﻿@{
+    Layout = "~/_SiteLayout.cshtml";
+    Page.Title = "";
+}
+
+<canvas id="mainCanvas">
+	<p>Your browser doesn't support canvas.</p>
+</canvas>
+<button>Reset Grid To Random</button>
+<script src="@Href("~/js/BunchScript.js")" type="text/javascript" charset="utf-8"></script>
+<script>
+(function() {
+    console.log("Here");
+	var cellHeight = 100,
+        cellWidth = 100,
+        dividerWidth = 20;
+    initCanvas( 3*cellWidth + 2* dividerWidth, 3*cellHeight + 2*dividerWidth );
+    drawCanvas( cellWidth, cellHeight, dividerWidth );
+    console.log($("#mainCanvas"));
+}());
+</script>

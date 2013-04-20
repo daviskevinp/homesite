@@ -1,0 +1,7 @@
+@{
+    var token = Twitter.GetAccessToken();
+    Session["token"] = token.Token;
+    Session["secret"] = token.Secret;
+    
+    Context.RedirectLocal(Href("~/" + Request["returnUrl"]));
+}

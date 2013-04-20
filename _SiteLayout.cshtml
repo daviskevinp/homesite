@@ -1,0 +1,72 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, height=device-height, maximum-scale=1.4, initial-scale=1.0, user-scalable=yes"/>
+        <META NAME="Description" CONTENT="The homesite of Kevin P. Davis, Ph. D., Software Archaeologist.">
+        <META NAME="KeyWords" CONTENT="Kevin P. Davis, Kevin P. Davis, Ph. D., Software Archaeology, Software Archaeologist, Technologist, Personal Site">
+        <title>@Page.Title</title>
+        <link href="@Href("~/Styles/Site.css")" rel="stylesheet" />
+        <link href="@Href("~/favicon.ico")" rel="shortcut icon" type="image/x-icon" />
+        <script src="@Href("~/js/modernizr-2.0.6.js")" type="text/javascript" charset="utf-8"></script>
+        <script src="@Href("~/js/jquery-1.7.1.js")" type="text/javascript" charset="utf-8"></script>
+    </head>
+    <body>
+        <div id="page">
+            <div class="box">
+                <header>
+                    <div id="name">Kevin P. Davis, Ph. D.</div>
+                    <div id="logo"><img src="Images/Logo.jpg" alt="My Logo"></div>
+                    <div id="personalTitle">Software Archaeologist</div>
+                </header>
+                <nav id="buttonNav">
+                    <ul id="menu">
+                        <li><a href="@Href("~/")">Home</a></li>
+                        <li><a href="@Href("~/Writings")">Writings</a></li>
+                        <li><a href="@Href("~/Professional")">Professional</a></li>
+                        <li><a href="@Href("~/Hobbies")">Hobbies</a></li>
+                    </ul>
+                </nav>
+                <div id="listNav">
+                    <ul id="menu">
+                        <li><a href="@Href("~/")">Home</a></li>
+                        <li><a href="@Href("~/Writings")">Writings</a></li>
+                        <li><a href="@Href("~/Professional")">Professional</a></li>
+                        <li><a href="@Href("~/Hobbies")">Hobbies</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div id="mainSpacer">&nbsp;</div>
+            <div class="box">
+                <div id="main">
+                    <div id="content">
+                        <h1>@Page.Title</h1>
+                        @RenderBody()
+                    </div>
+                    <!--<div id="sidebar">
+                        List of Important things
+                        <ul>
+                            <li><a href="http://www.thatconference.com">That Conference!</a></li>
+                            <li><a href="http://softwarearchaeology.blogspot.com">Software Archaeology</a></li>
+                            <li><a href="http://www.thatconference.com">That Conference!</a></li>
+                            <li><a href="http://www.thatconference.com">That Conference!</a></li>
+                            <li><a href="http://www.thatconference.com">That Conference!</a></li>
+                            <li><a href="http://www.thatconference.com">That Conference!</a></li>
+                        </ul>
+                    </div>-->
+                </div>
+            </div>
+        </div>
+        <footer>
+            Connect with me:
+            <a href="http://www.twitter.com/kevinpdavis"><img class="connect" src="Images/twitter.png" alt="Twitter" /></a>
+            <a href="http://www.linkedin.com/in/daviskevinp"><img class="connect" src="Images/linkedin.png" alt="LinkedIn"/></a>
+            <a href="http://www.facebook.com/daviskevinp"><img class="connect" src="Images/facebook.png" alt="Facebook"/></a>
+            <a href="http://plus.google.com/106642287960644467177"><img class="connect" src="Images/googleplus.png" alt="Google+"/></a>
+            <a href="mailto:kevin@kevinpdavis.com"><img class="connect" src="Images/gmail.png" alt="Gmail"/></a>
+            <a href="http://softwarearchaeology.blogspot.com"><img class="connect" src="Images/blogger.png" alt="Blogger"/></a>
+            <a href="http://gamblekdavis.blogspot.com"><img class="connect" src="Images/blogger.png" alt="Blogger"/></a>
+            <a href="http://gambleandrandom.blogspot.com"><img class="connect" src="Images/blogger.png" alt="Blogger"/></a>
+        </footer>
+    </body>
+</html>
