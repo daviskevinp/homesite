@@ -365,10 +365,23 @@ border: 0;
     border: 0;
 }
 
-@media only screen and (max-width: 1129px) {
+#wordcloudSmall{
+    display: none;
+}
+
+@media only screen and (max-width: 1290px) {
     #main #content {
         float: none;
         width: 100%;
+    }
+
+    #wordcloud{
+        display: none;
+    }
+
+    #wordcloudSmall{
+        display: block;
+        text-align: center;
     }
 
     #main #sidebar {
@@ -376,7 +389,7 @@ border: 0;
     }
 }
 
-@media only screen and (max-width: 775px) {
+@media only screen and (max-width: 890px) {
     #main #content {
         float: none;
         width: 100%;
@@ -420,6 +433,10 @@ border: 0;
         width: 100%;
     }
 
+    .box {
+        padding: 10px;
+    }
+
     #main #sidebar {
         display: none;
     }
@@ -445,5 +462,19 @@ border: 0;
         padding: 8px 5px 8px 10px;
         border-bottom: solid 1px #aaa;
         text-decoration: none;
+    }
+
+    #wordcloudSmall {
+        display: none;
+    }
+    #wordcloudText {
+        display: none;
+    }
+    #wordcloudHeader {
+        display: none;
+    }
+
+    #footie {
+        display: none;
     }
 }
