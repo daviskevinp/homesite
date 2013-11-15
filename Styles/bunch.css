@@ -1,0 +1,45 @@
+﻿body
+{
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #ede3aa;
+}
+
+span {
+    font-style: italic
+}
+
+td {
+    padding: 100px;
+    background-color: red;
+}
+
+tr {
+    padding: 100px;
+}
+
+table {
+    border-spacing: 6px;
+}
+
+h1 {
+    font-weight: normal;
+    color: rgb(57, 57, 159);
+    padding-left: 6px;
+}
+
+#success, #controls {
+    display: none;
+}
+
+#content {
+    float: left;
+}
+
+#tableau, #rightHandSide{
+    display:  inline;
+}
+
+#success {
+    margin: 15px;
+    font-size: 30px;
+}

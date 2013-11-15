@@ -1,0 +1,11 @@
+﻿body {
+    font-family: 'Segoe UI';
+    color: #003366;
+    background-color: #CCCC99;
+    padding-left: 30px;
+}
+
+canvas {
+    background-color: #555555;
+}
+

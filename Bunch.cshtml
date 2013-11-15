@@ -1,21 +1,42 @@
-﻿@{
-    Layout = "~/_SiteLayout.cshtml";
-    Page.Title = "";
-}
+﻿<!DOCTYPE html>
 
-<canvas id="mainCanvas">
-	<p>Your browser doesn't support canvas.</p>
-</canvas>
-<button>Reset Grid To Random</button>
-<script src="@Href("~/js/BunchScript.js")" type="text/javascript" charset="utf-8"></script>
-<script>
-(function() {
-    console.log("Here");
-	var cellHeight = 100,
-        cellWidth = 100,
-        dividerWidth = 20;
-    initCanvas( 3*cellWidth + 2* dividerWidth, 3*cellHeight + 2*dividerWidth );
-    drawCanvas( cellWidth, cellHeight, dividerWidth );
-    console.log($("#mainCanvas"));
-}());
-</script>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>Little Switch Puzzle Game</title>
+    <link rel="stylesheet" href="Styles/bunch.css" type="text/css" />
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js" ></script>
+    <script src="js/Bunch.js"></script>
+</head>
+<body>
+    <h1>Little Switch Puzzle Game</h1>
+
+    <h3>Instructions:  Turn all the blocks green by clicking on them!</h3>
+    <div id="tableau">
+        <div id="content">
+            <table>
+                <tr>
+                    <td id="0">&nbsp;</td>
+                    <td id="1">&nbsp;</td>
+                    <td id="2">&nbsp;</td>
+                </tr>
+                <tr>
+                    <td id="3">&nbsp;</td>
+                    <td id="4">&nbsp;</td>
+                    <td id="5">&nbsp;</td>
+                </tr>
+                <tr>
+                    <td id="6">&nbsp;</td>
+                    <td id="7">&nbsp;</td>
+                    <td id="8">&nbsp;</td>
+                </tr>
+            </table>
+        </div>                      
+        <div id="rightHandSide">
+            <div id="counter">Number of Clicks: <span id="countNumber">0</span></div>
+            <div id="success" class="hidden">YOU WIN!</div>
+            <div id="controls" class="hidden"><button>Reset Game</button></div>
+        </div>
+    </div>
+</body>
+</html>
