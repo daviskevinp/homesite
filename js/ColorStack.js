@@ -15,15 +15,16 @@ $(function () {
 function animate() {
     var canvas = document.getElementById('myCanvas');
     var context = canvas.getContext('2d');
+    var pixSize = 3;
     
     // clear
     context.clearRect(0, 0, canvas.width, canvas.height);
 
     // draw stuff
-    for ( var red = 0; red < 256 ; red += 3) {
-        for (var green = 0; green < 256; green +=3 ) {
+    for ( var red = 0; red < 256 ; red += pixSize) {
+        for (var green = 0; green < 256; green += pixSize ) {
             context.fillStyle = "rgba(" + red + "," + green + "," + blue + "," + 1 + ")";
-            context.fillRect(red, green, 3, 3);
+            context.fillRect(red, green, pixSize, pixSize);
         }
     }
 
@@ -34,10 +35,11 @@ function animate() {
         direction = 1;
     }
     
-    blue += direction;
+    blue += direction * pixSize;
     
     // request new frame
     requestAnimFrame(function () {
         animate();
+        $("#blueValue").text(blue);
     });
 }
